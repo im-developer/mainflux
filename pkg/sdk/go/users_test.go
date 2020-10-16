@@ -8,14 +8,12 @@ import (
 	"fmt"
 	"net/http"
 	"net/http/httptest"
-	"os"
 	"testing"
 
 	"github.com/mainflux/mainflux"
-	log "github.com/mainflux/mainflux/logger"
 	sdk "github.com/mainflux/mainflux/pkg/sdk/go"
 	"github.com/mainflux/mainflux/users"
-	"github.com/mainflux/mainflux/users/api"
+	httpapi "github.com/mainflux/mainflux/users/api/http"
 	"github.com/mainflux/mainflux/users/mocks"
 	"github.com/opentracing/opentracing-go/mocktracer"
 	"github.com/stretchr/testify/assert"
@@ -36,8 +34,7 @@ func newUserService() users.Service {
 }
 
 func newUserServer(svc users.Service) *httptest.Server {
-	logger, _ := log.New(os.Stdout, log.Info.String())
-	mux := api.MakeHandler(svc, mocktracer.New(), logger)
+	mux := httpapi.MakeHandler(svc, mocktracer.New())
 	return httptest.NewServer(mux)
 }
 

@@ -1,7 +1,7 @@
 // Copyright (c) Mainflux
 // SPDX-License-Identifier: Apache-2.0
 
-package api_test
+package http_test
 
 import (
 	"context"
@@ -11,14 +11,12 @@ import (
 	"io/ioutil"
 	"net/http"
 	"net/http/httptest"
-	"os"
 	"strings"
 	"testing"
 
 	"github.com/mainflux/mainflux"
-	log "github.com/mainflux/mainflux/logger"
 	"github.com/mainflux/mainflux/users"
-	"github.com/mainflux/mainflux/users/api"
+	hhtpapi "github.com/mainflux/mainflux/users/api/http"
 	"github.com/mainflux/mainflux/users/bcrypt"
 	"github.com/mainflux/mainflux/users/mocks"
 	"github.com/opentracing/opentracing-go/mocktracer"
@@ -36,8 +34,8 @@ var (
 	notFoundRes    = toJSON(errorRes{users.ErrUserNotFound.Error()})
 	unauthRes      = toJSON(errorRes{users.ErrUnauthorizedAccess.Error()})
 	malformedRes   = toJSON(errorRes{users.ErrMalformedEntity.Error()})
-	unsupportedRes = toJSON(errorRes{api.ErrUnsupportedContentType.Error()})
-	failDecodeRes  = toJSON(errorRes{api.ErrFailedDecode.Error()})
+	unsupportedRes = toJSON(errorRes{hhtpapi.ErrUnsupportedContentType.Error()})
+	failDecodeRes  = toJSON(errorRes{hhtpapi.ErrFailedDecode.Error()})
 	groupExists    = toJSON(errorRes{users.ErrGroupConflict.Error()})
 )
 
@@ -77,8 +75,7 @@ func newService() users.Service {
 }
 
 func newServer(svc users.Service) *httptest.Server {
-	logger, _ := log.New(os.Stdout, log.Info.String())
-	mux := api.MakeHandler(svc, mocktracer.New(), logger)
+	mux := hhtpapi.MakeHandler(svc, mocktracer.New())
 	return httptest.NewServer(mux)
 }
 
@@ -242,7 +239,7 @@ func TestPasswordResetRequest(t *testing.T) {
 	expectedExisting := toJSON(struct {
 		Msg string `json:"msg"`
 	}{
-		api.MailSent,
+		hhtpapi.MailSent,
 	})
 
 	_, err := svc.Register(context.Background(), user)
