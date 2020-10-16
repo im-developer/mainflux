@@ -13,7 +13,7 @@ import (
 	"github.com/mainflux/mainflux"
 	sdk "github.com/mainflux/mainflux/pkg/sdk/go"
 	"github.com/mainflux/mainflux/users"
-	httpapi "github.com/mainflux/mainflux/users/api/http"
+	"github.com/mainflux/mainflux/users/api"
 	"github.com/mainflux/mainflux/users/mocks"
 	"github.com/opentracing/opentracing-go/mocktracer"
 	"github.com/stretchr/testify/assert"
@@ -34,7 +34,7 @@ func newUserService() users.Service {
 }
 
 func newUserServer(svc users.Service) *httptest.Server {
-	mux := httpapi.MakeHandler(svc, mocktracer.New())
+	mux := api.MakeHandler(svc, mocktracer.New())
 	return httptest.NewServer(mux)
 }
 
