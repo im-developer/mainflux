@@ -65,6 +65,8 @@ services:
       POSTGRES_DB: ${MF_AUTHN_DB}
     networks:
       - mainflux-base-net
+    ports:
+      - 5433:5432
     volumes:
       - mainflux-authn-db-volume:/var/lib/postgresql/data
 
@@ -103,6 +105,8 @@ services:
       POSTGRES_DB: ${MF_USERS_DB}
     networks:
       - mainflux-base-net
+    ports:
+      - 5434:5432
     volumes:
       - mainflux-users-db-volume:/var/lib/postgresql/data
 
@@ -152,6 +156,8 @@ services:
       POSTGRES_DB: ${MF_THINGS_DB}
     networks:
       - mainflux-base-net
+    ports:
+      - 5435:5432
     volumes:
       - mainflux-things-db-volume:/var/lib/postgresql/data
 

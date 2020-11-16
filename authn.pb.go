@@ -284,7 +284,7 @@ func (m *UserIdentity) GetId() string {
 
 func (m *UserIdentity) GetEmail() string {
 	if m != nil {
-		return m.Email
+		return m.Id
 	}
 	return ""
 }
