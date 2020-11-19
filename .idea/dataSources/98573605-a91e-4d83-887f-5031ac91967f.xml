@@ -784,19 +784,19 @@ false Z
 false Zulu
 false posixrules
 </TimeZones>
-      <StartupTime>1605480532</StartupTime>
+      <StartupTime>1605541393</StartupTime>
     </root>
     <database id="2" parent="1" name="postgres">
       <ObjectId>13015</ObjectId>
       <Comment>default administrative connection database</Comment>
       <Owner>mainflux</Owner>
-      <IntrospectionStateNumber>571</IntrospectionStateNumber>
+      <IntrospectionStateNumber>573</IntrospectionStateNumber>
       <Current>1</Current>
     </database>
     <database id="3" parent="1" name="users">
       <ObjectId>16384</ObjectId>
       <Owner>mainflux</Owner>
-      <IntrospectionStateNumber>575</IntrospectionStateNumber>
+      <IntrospectionStateNumber>571</IntrospectionStateNumber>
     </database>
     <role id="4" parent="1" name="mainflux">
       <ObjectId>10</ObjectId>
@@ -838,7 +838,7 @@ false posixrules
       <Comment>standard public schema</Comment>
       <StateNumber>352</StateNumber>
       <Owner>mainflux</Owner>
-      <IntrospectionStateNumber>572</IntrospectionStateNumber>
+      <IntrospectionStateNumber>574</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <access-method id="13" parent="2" name="btree">
@@ -917,7 +917,7 @@ false posixrules
       <Comment>standard public schema</Comment>
       <StateNumber>352</StateNumber>
       <Owner>mainflux</Owner>
-      <IntrospectionStateNumber>576</IntrospectionStateNumber>
+      <IntrospectionStateNumber>572</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <access-method id="27" parent="3" name="btree">

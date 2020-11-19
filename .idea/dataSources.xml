@@ -19,5 +19,11 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5435/postgres</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="Bootstrap" uuid="0731d73f-2f52-4732-8ba9-39048e8874ce">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5431/postgres</jdbc-url>
+    </data-source>
   </component>
 </project>

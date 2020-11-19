@@ -26,6 +26,8 @@ services:
       POSTGRES_DB: ${MF_BOOTSTRAP_DB}
     networks:
       - docker_mainflux-base-net
+    ports:
+      - 5431:5432
     volumes:
       - mainflux-bootstrap-db-volume:/var/lib/postgresql/data
 

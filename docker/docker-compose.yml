@@ -34,6 +34,7 @@ services:
       - ${MF_NGINX_SSL_PORT}:${MF_NGINX_SSL_PORT}
       - ${MF_NGINX_MQTT_PORT}:${MF_NGINX_MQTT_PORT}
       - ${MF_NGINX_MQTTS_PORT}:${MF_NGINX_MQTTS_PORT}
+      - ${MF_MQTT_BROKER_WS_PORT}:${MF_MQTT_BROKER_WS_PORT}
     networks:
       - mainflux-base-net
     env_file:
@@ -167,6 +168,8 @@ services:
     restart: on-failure
     networks:
       - mainflux-base-net
+    ports:
+      - 6377:6379
     volumes:
       - mainflux-auth-redis-volume:/data
 
@@ -272,6 +275,8 @@ services:
     restart: on-failure
     networks:
       - mainflux-base-net
+    ports:
+      - 6378:6379
     volumes:
       - mainflux-es-redis-volume:/data
 

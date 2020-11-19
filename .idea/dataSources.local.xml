@@ -56,5 +56,14 @@
         </introspection-scope>
       </schema-mapping>
     </data-source>
+    <data-source name="Bootstrap" uuid="0731d73f-2f52-4732-8ba9-39048e8874ce">
+      <database-info product="PostgreSQL" version="10.2" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.5" dbms="POSTGRES" exact-version="10.2">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>mainflux</user-name>
+      <schema-mapping />
+    </data-source>
   </component>
 </project>

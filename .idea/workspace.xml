@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="CargoProjects">
+    <cargoProject FILE="$PROJECT_DIR$/api/Cargo.toml" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="745ecb6e-d633-4aa3-b91a-3d4d81cd363d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/authn.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/authn.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4361fc94-53ac-4b09-912d-606097e6d4ad.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4361fc94-53ac-4b09-912d-606097e6d4ad.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4361fc94-53ac-4b09-912d-606097e6d4ad/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4361fc94-53ac-4b09-912d-606097e6d4ad/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4361fc94-53ac-4b09-912d-606097e6d4ad/storage_v2/_src_/database/things.RRndyw/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4361fc94-53ac-4b09-912d-606097e6d4ad/storage_v2/_src_/database/things.RRndyw/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/98573605-a91e-4d83-887f-5031ac91967f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/98573605-a91e-4d83-887f-5031ac91967f.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/98573605-a91e-4d83-887f-5031ac91967f/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/98573605-a91e-4d83-887f-5031ac91967f/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/98573605-a91e-4d83-887f-5031ac91967f/storage_v2/_src_/database/users.CI6mBg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/98573605-a91e-4d83-887f-5031ac91967f/storage_v2/_src_/database/users.CI6mBg/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mainflux.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mainflux.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/addons/bootstrap/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/addons/bootstrap/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/things/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/things/service.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,18 +56,19 @@
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="go.vendoring.notification.had.been.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/things/redis" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/api-lumen/app/Http/Controllers" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
     <property name="settings.editor.selected.configurable" value="com.intellij.profiler.configurations.ui.EditProfilerConfigurationsComponent" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/ui/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/api-lumen/app/Http/Controllers" />
+      <recent name="$PROJECT_DIR$/api-lumen/app/Models" />
+      <recent name="$PROJECT_DIR$/api/src" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/things/redis" />
-      <recent name="$PROJECT_DIR$/things/tracing" />
-      <recent name="$PROJECT_DIR$/things/postgres" />
-      <recent name="$PROJECT_DIR$/things" />
-      <recent name="$PROJECT_DIR$/http" />
     </key>
   </component>
   <component name="RunManager" selected="Makefile.test">
@@ -112,13 +125,17 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker.nats: Compose Deployment" />
+        <item itemvalue="Docker.docker.http-adapter: Compose Deployment" />
+        <item itemvalue="Docker.docker.authn-db: Compose Deployment" />
         <item itemvalue="Makefile.test" />
         <item itemvalue="Makefile.cleandocker" />
-        <item itemvalue="Docker.docker.nats: Compose Deployment" />
-        <item itemvalue="Docker.docker.authn-db: Compose Deployment" />
-        <item itemvalue="Docker.docker.http-adapter: Compose Deployment" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="RustProjectSettings">
+    <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
+    <option name="version" value="2" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -146,10 +163,10 @@
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
     <state x="636" y="471" key="#GOROOT/0.25.1680.1025/1680.25.1280.999@0.25.1680.1025" timestamp="1602186944193" />
-    <state x="854" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605480597692">
+    <state x="854" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605567144996">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
-    <state x="854" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1680.1025/1680.25.1280.999@0.25.1680.1025" timestamp="1605480597692" />
+    <state x="854" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1680.1025/1680.25.1280.999@0.25.1680.1025" timestamp="1605567144996" />
     <state x="561" y="344" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602164440156">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
@@ -162,39 +179,39 @@
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
     <state x="537" y="264" key="#docker.users-db:_Compose_Deployment/0.25.1680.1025/1680.25.1280.999@0.25.1680.1025" timestamp="1602093824174" />
-    <state width="1638" height="277" key="GridCell.Tab.0.bottom" timestamp="1602148692910">
+    <state width="1126" height="375" key="GridCell.Tab.0.bottom" timestamp="1605558254258">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
-    <state width="1638" height="277" key="GridCell.Tab.0.bottom/0.25.1680.1025/1680.25.1280.999@0.25.1680.1025" timestamp="1602148692910" />
-    <state width="1638" height="277" key="GridCell.Tab.0.center" timestamp="1602148692909">
+    <state width="1126" height="375" key="GridCell.Tab.0.bottom/0.25.1680.1025/1680.25.1280.999@0.25.1680.1025" timestamp="1605558254258" />
+    <state width="1126" height="375" key="GridCell.Tab.0.center" timestamp="1605558254256">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
-    <state width="1638" height="277" key="GridCell.Tab.0.center/0.25.1680.1025/1680.25.1280.999@0.25.1680.1025" timestamp="1602148692909" />
-    <state width="1638" height="277" key="GridCell.Tab.0.left" timestamp="1602148692908">
+    <state width="1126" height="375" key="GridCell.Tab.0.center/0.25.1680.1025/1680.25.1280.999@0.25.1680.1025" timestamp="1605558254256" />
+    <state width="1126" height="375" key="GridCell.Tab.0.left" timestamp="1605558254253">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
-    <state width="1638" height="277" key="GridCell.Tab.0.left/0.25.1680.1025/1680.25.1280.999@0.25.1680.1025" timestamp="1602148692908" />
-    <state width="1638" height="277" key="GridCell.Tab.0.right" timestamp="1602148692909">
+    <state width="1126" height="375" key="GridCell.Tab.0.left/0.25.1680.1025/1680.25.1280.999@0.25.1680.1025" timestamp="1605558254253" />
+    <state width="1126" height="375" key="GridCell.Tab.0.right" timestamp="1605558254258">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
-    <state width="1638" height="277" key="GridCell.Tab.0.right/0.25.1680.1025/1680.25.1280.999@0.25.1680.1025" timestamp="1602148692909" />
-    <state width="231" height="457" key="HiddenNamespacesPopup" timestamp="1605480804642">
+    <state width="1126" height="375" key="GridCell.Tab.0.right/0.25.1680.1025/1680.25.1280.999@0.25.1680.1025" timestamp="1605558254258" />
+    <state width="231" height="457" key="HiddenNamespacesPopup" timestamp="1605542448737">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
-    <state width="231" height="457" key="HiddenNamespacesPopup/0.25.1680.1025/1680.25.1280.999@0.25.1680.1025" timestamp="1605480804642" />
+    <state width="231" height="457" key="HiddenNamespacesPopup/0.25.1680.1025/1680.25.1280.999@0.25.1680.1025" timestamp="1605542448737" />
     <state x="267" y="111" key="SettingsEditor" timestamp="1602187135923">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
     <state x="229" y="98" key="SettingsEditor/0.25.1440.875/1440.25.1280.999@0.25.1440.875" timestamp="1602006163846" />
     <state x="267" y="111" key="SettingsEditor/0.25.1680.1025/1680.25.1280.999@0.25.1680.1025" timestamp="1602187135923" />
-    <state x="730" y="429" width="342" height="238" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1605481460496">
+    <state x="730" y="429" width="342" height="238" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1605557558084">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
-    <state x="730" y="429" width="342" height="238" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.25.1680.1025/1680.25.1280.999@0.25.1680.1025" timestamp="1605481460496" />
-    <state x="541" y="292" width="597" height="548" key="find.popup" timestamp="1605481763751">
+    <state x="730" y="429" width="342" height="238" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.25.1680.1025/1680.25.1280.999@0.25.1680.1025" timestamp="1605557558084" />
+    <state x="541" y="292" width="597" height="548" key="find.popup" timestamp="1605734414535">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
-    <state x="541" y="292" width="597" height="548" key="find.popup/0.25.1680.1025/1680.25.1280.999@0.25.1680.1025" timestamp="1605481763751" />
+    <state x="541" y="292" width="597" height="548" key="find.popup/0.25.1680.1025/1680.25.1280.999@0.25.1680.1025" timestamp="1605734414535" />
     <state x="505" y="252" width="670" height="676" key="search.everywhere.popup" timestamp="1602252795144">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
